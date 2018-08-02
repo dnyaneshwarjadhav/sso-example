@@ -185,7 +185,7 @@ public class KeyUtils {
         SecurityProvider.ensureProviderAdded();
 
         final PGPPublicKeyRingCollection keyRingCollection = new PGPPublicKeyRingCollection(
-                PGPUtil.getDecoderStream(publicKeyRing));
+                PGPUtil.getDecoderStream(publicKeyRing));//This line does not compile***
 
         // iterate through the key rings.
         final List<PGPPublicKey> allPublicKeys = new ArrayList<PGPPublicKey>();
