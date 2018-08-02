@@ -62,7 +62,7 @@ public class KeyUtils {
 
         SecurityProvider.ensureProviderAdded();
 
-        final PGPSecretKeyRingCollection secretRing = new PGPSecretKeyRingCollection(PGPUtil.getDecoderStream(secretKeyRing));
+        final PGPSecretKeyRingCollection secretRing = new PGPSecretKeyRingCollection(PGPUtil.getDecoderStream(secretKeyRing));//This line does not compile
 
         final List<PGPSecretKey> allSecretKeys = new ArrayList<PGPSecretKey>();
 
